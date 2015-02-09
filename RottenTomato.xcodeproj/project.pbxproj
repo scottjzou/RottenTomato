@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD40028A1A88272A0040731C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4002891A88272A0040731C /* MovieCell.swift */; };
 		BD51DB051A8801B100EF2B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51DB041A8801B100EF2B2A /* AppDelegate.swift */; };
 		BD51DB0A1A8801B100EF2B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51DB081A8801B100EF2B2A /* Main.storyboard */; };
 		BD51DB0C1A8801B100EF2B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51DB0B1A8801B100EF2B2A /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD4002891A88272A0040731C /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../MovieCell.swift; sourceTree = "<group>"; };
 		BD51DAFF1A8801B100EF2B2A /* RottenTomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51DB031A8801B100EF2B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD51DB041A8801B100EF2B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		BD51DB011A8801B100EF2B2A /* RottenTomato */ = {
 			isa = PBXGroup;
 			children = (
+				BD4002891A88272A0040731C /* MovieCell.swift */,
 				BD51DB241A88022B00EF2B2A /* MovieViewController.swift */,
 				BD51DB041A8801B100EF2B2A /* AppDelegate.swift */,
 				BD51DB081A8801B100EF2B2A /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				BD51DB051A8801B100EF2B2A /* AppDelegate.swift in Sources */,
 				BD51DB251A88022B00EF2B2A /* MovieViewController.swift in Sources */,
+				BD40028A1A88272A0040731C /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				BD51DB201A8801B100EF2B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD51DB211A8801B100EF2B2A /* Build configuration list for PBXNativeTarget "RottenTomatoTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				BD51DB231A8801B100EF2B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
