@@ -68,6 +68,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="movieTitleLabel" destination="0Vg-0i-KJx" id="1Ed-dV-Tcy"/>
+                                            <outlet property="posterView" destination="NIM-6P-NXc" id="V2f-F7-bSh"/>
                                             <outlet property="synoposisLabel" destination="Obk-2c-HVi" id="2ac-HU-6L9"/>
                                         </connections>
                                     </tableViewCell>

@@ -55,6 +55,11 @@ class MovieViewController: UIViewController,UITableViewDataSource, UITableViewDe
         cell.movieTitleLabel.text = movie["title"] as? String
         cell.synoposisLabel.text = movie["synopsis"] as? String
         
+        var posters = movie["posters"] as NSDictionary
+        var posterUrl = posters["thumbnail"] as String
+        
+        cell.posterView.setImageWithURL(NSURL(string: posterUrl))
+        
 //        cell.textLabel!.text = "Hello, I am at row: \(indexPath.row), section: \(indexPath.section)"
         return cell
     }
