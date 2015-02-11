@@ -16,6 +16,8 @@ class MovieViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        var url = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=z42f5fupkt2ea68n8wwnxwhx&limit=20&country=us"
 
         // Do any additional setup after loading the view.
     }
