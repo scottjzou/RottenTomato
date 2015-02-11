@@ -32,7 +32,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="137" y="23" width="105" height="21"/>
+                                                        <rect key="frame" x="137" y="25" width="121" height="21"/>
                                                     </variation>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-6P-NXc">
@@ -47,7 +47,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="137" y="74" width="42" height="21"/>
+                                                        <rect key="frame" x="137" y="60" width="121" height="53"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="436"/>
+            <point key="canvasLocation" x="1044" y="432"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zjT-oq-Fsb">

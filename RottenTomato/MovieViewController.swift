@@ -9,8 +9,10 @@
 import UIKit
 
 class MovieViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-
+    
+    var movies: [NSDictionary] = []
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +20,20 @@ class MovieViewController: UIViewController,UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         
         var url = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=z42f5fupkt2ea68n8wwnxwhx&limit=20&country=us"
+        
+        var request = NSURLRequest(URL: NSURL(string: url)!)
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (
+            reponse: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+            var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
+            
+            
+            self.movies = object["movies"] as [NSDictionary]
+            
+            self.tableView.reloadData()
+            }
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -28,14 +44,16 @@ class MovieViewController: UIViewController,UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return movies.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as MovieCell
         
-        cell.movieTitleLabel.text = "Title"
-        cell.synoposisLabel.text = "Synoposis"
+        var movie = movies[indexPath.row]
+        
+        cell.movieTitleLabel.text = movie["title"] as? String
+        cell.synoposisLabel.text = movie["synopsis"] as? String
         
 //        cell.textLabel!.text = "Hello, I am at row: \(indexPath.row), section: \(indexPath.section)"
         return cell
